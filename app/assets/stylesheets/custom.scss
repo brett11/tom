@@ -1,0 +1,360 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/* variables and mixins */
+
+$light-gray: #777;
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* universal */
+
+body {
+  padding-top: 60px;
+  font-family:"Trebuchet MS";
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* header */
+
+header {
+  // https://www.adam-bray.com/2017/02/18/create-a-html-5-and-css-3-mobile-navigation-bar/
+  //display: flex;
+  margin-bottom: 0px;
+}
+
+#navbar_container{
+  background-color: #008040;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.5em;
+  color: #fff;
+  // text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  // font-weight: bold;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+
+  /* & is reference to parent logo. this is nested writing per 5.2.2 of Ruby on Rails Tutorial */
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+#phone_number_header{
+  background-color: white;
+  display: flex;
+}
+
+#phone_icon img{
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#site_content{
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10px;
+}
+
+// https://stackoverflow.com/questions/19844561/bootstrap-3-vertically-center-navigation-links-when-logo-increasing-the-height
+//can't flexbox this I don't think because by default from the bootstrap sass gem, it's a float
+.navbar-default a {
+  line-height: 35px;
+}
+
+// https://stackoverflow.com/questions/18777235/center-content-in-responsive-bootstrap-navbar
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+#menuContent{
+  font-size: 1.1em;
+
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  color: white !important;
+}
+
+.dropdown-menu{
+  text-align: center;
+  font-size: 1.0em;
+}
+
+// home page
+.front_page_container{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container_for_background{
+  background-color: #eaeaea;
+  padding-top: 40px;
+}
+
+.content_container{
+
+}
+
+.practice_name{
+
+}
+
+.location_and_hours_container{
+
+}
+
+#location_and_hours{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location .style{
+
+}
+
+#map{
+
+}
+
+.hours{
+  margin-top: 20px;
+}
+
+.phone_number{
+
+}
+
+.about_us_container{
+  //padding-left: 50px;
+}
+
+#about_us{
+
+}
+
+.about_tom_container{
+  margin-top: 20px;
+  //padding-left: 50px;
+}
+
+#about_tom{
+
+}
+
+.tom{
+
+}
+
+.tom_picture{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tom_picture img{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.tom_description{
+  display: flex;
+  align-items: flex-end;
+}
+
+.services_container{
+  margin-top: 20px;
+  //padding-left: 50px;
+}
+
+#services{
+
+}
+
+//a.anchor {
+//  display: block;
+//  position: relative;
+//  top: -30px;
+//  visibility: hidden;
+//}
+
+#front_page_picture img{
+  width: 100%;
+  max-height: 30vh;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  //font-size: 1.2em;
+  //letter-spacing: -1px;
+  //margin-bottom: 30px;
+  //text-align: center;
+  //font-weight: normal;
+  //color: $light-gray;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+
+#front_page img{
+  width: 100%;
+  max-height: 100vh;
+}
+
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  @include box_sizing;
+}
+
+input{
+  height: auto !important;
+}
+
+#error_explanation{
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors{
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10 px;
+  span{
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
+/* errors */
+.field_with_errors {
+  display: inline;
+  margin: 0 auto;
+}
+
+.field_with_errors .message {
+  color: #D00;
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+/* pagination */
+.pagination {
+  margin: 0 auto;
+  display: table;
+}
+
+/* figures */
+figure {
+  max-width: 100%;
+}
+
+figure img {
+  display: flex;
+  max-width: 100%
+}
+//
+//figure figcaption {
+//  text-align: center;
+//
+//}
+//
+figcaption {
+  max-width: 200px;
+}
+//figure img {
+//  display:table-cell;
+//  float: left;
+//}
+
+/* ul margin top */
+
+ul {
+  margin-top: 15px;
+}
+
+.pagination_list{
+  margin-bottom: 15px;
+}
+
+aside{
+  display: flex;
+  justify-content: center;
+}
+
+h3{
+  text-align: center;
+  margin-top: 10px;
+}
