@@ -29,3 +29,4 @@
 # reduce size by excluding images
 /public/system/gallery
 
+.idea/
