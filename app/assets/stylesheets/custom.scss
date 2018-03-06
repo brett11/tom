@@ -44,7 +44,7 @@ header {
 }
 
 #navbar_container{
-  background-color: #6b8071;
+  background-color: #4a5980;
 }
 
 #logo {
@@ -216,7 +216,11 @@ header {
 //}
 
 #front_page_picture img{
-  width: 100%;
+  //width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DADADA;
   max-height: 30vh;
 }
 
