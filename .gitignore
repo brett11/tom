@@ -30,3 +30,6 @@
 /public/system/gallery
 
 .idea/
+
+#Ignoring images so they don't get pushed up to github
+/app/assets/images
