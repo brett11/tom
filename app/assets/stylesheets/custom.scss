@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 
-/* variables and mixins */
+/* VARIABLES AND MIXINS */
 
 $light-gray: #777;
 $gray-medium-light: #eaeaea;
@@ -13,29 +13,14 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
-/* universal */
+/* GLOBAL STYLES */
 
 body {
   padding-top: 60px;
   font-family:"Trebuchet MS";
 }
 
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
-}
-
-/* header */
+/* HEADER */
 
 header {
   // https://www.adam-bray.com/2017/02/18/create-a-html-5-and-css-3-mobile-navigation-bar/
@@ -71,7 +56,7 @@ header {
 }
 
 #phone_icon img{
-  width: 16px !important;
+  width: 16px !important;   //careful with !important - Hartl CSS tutorial
   height: 16px !important;
 }
 
@@ -112,7 +97,8 @@ header {
   font-size: 1.0em;
 }
 
-// home page
+
+/* HOME STYLES */
 .front_page_container{
   padding-left: 0;
   padding-right: 0;
@@ -164,7 +150,7 @@ header {
 }
 
 .about_us_container{
-  //padding-left: 50px;
+  padding-left: 50px;
 }
 
 #about_us{
@@ -217,12 +203,13 @@ header {
 //}
 
 #front_page_picture img{
-  //width: 100%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #DADADA;
-  max-height: 30vh;
+  height: 70vh;
+  //padding: 15px 0px;
+  background-size: cover
 }
 
 /* typography */
