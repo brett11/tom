@@ -3,7 +3,7 @@
   <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
     <div id="phone_number_header">
       <div id="phone_icon">
-        <%= image_tag("phone_blue-phone-256.jpg", alt: "phone")  %>
+        <%= image_tag("phone_icon.png", alt: "phone")  %>       <!--phone available under creative commons 3.0, https://www.iconfinder.com/icons/81145/mb_phone_icon-->
       </div>
       <b>630-669-2325</b>
     </div>
@@ -15,15 +15,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <%= link_to("Fox Decorating Co.", root_path, id: "logo", class:"navbar-brand") %>
+        <%= link_to("Fox Decorating", root_path, id: "logo", class:"navbar-brand") %>
       </div>
 
       <div class="collapse navbar-collapse" id="menuContent">
         <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item"><%= link_to("About", '#', class: "nav-link")%></li>
-          <li class="nav-item"><%= link_to("Services", '#', class: "nav-link")%></li>
           <li class="nav-item"><%= link_to("Gallery", '#', class: "nav-link")%></li>
-          <li class="nav-item"><%= link_to("Contact Us", '#', class: "nav-link anchor")%></li>
+          <li class="nav-item"><%= link_to("Testimonials", '#', class: "nav-link")%></li>
+          <li class="nav-item"><%= link_to("About", '#', class: "nav-link")%></li>
+          <li class="nav-item"><%= link_to("Contact", '#', class: "nav-link anchor")%></li>
         </ul><!--nav navbar-nav navbar-right-->
       </div><!--collapse navbar-collapse-->
     </div>
