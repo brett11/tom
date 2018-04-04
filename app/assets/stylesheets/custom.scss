@@ -14,7 +14,6 @@ $gray-medium-light: #eaeaea;
 }
 
 /* GLOBAL STYLES */
-
 body {
   padding-top: 60px;
   font-family:"Trebuchet MS";
@@ -29,7 +28,7 @@ header {
 }
 
 #navbar_container{
-  background-color: #4a5980;
+  background-color: #284980;
 }
 
 #logo {
@@ -98,6 +97,37 @@ header {
   text-align: center;
   font-size: 1.0em;
 }
+
+/* FOOTER STYLES */
+
+footer {
+  position: fixed;
+  bottom: 0; /*https://stackoverflow.com/questions/19330611/fixed-footer-in-bootstrap*/
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+  font-size: 1.1em;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
 
 /* HOME STYLES */
 .front_page_container{
@@ -354,4 +384,10 @@ aside{
 h3{
   text-align: center;
   margin-top: 10px;
+}
+
+/* GALLERY STYLES */
+
+.gallery_page_container, .row {
+  padding-top: 20px;
 }
