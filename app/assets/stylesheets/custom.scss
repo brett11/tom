@@ -102,14 +102,13 @@ header {
 footer {
   position: fixed;
   bottom: 0; /*https://stackoverflow.com/questions/19330611/fixed-footer-in-bootstrap*/
-  margin: 10px 0 20px;
-  padding-top: 5px;
+  margin: 15px 0;
 }
 
 footer a {
   color: #555;
-  font-size: 1.25em;
-  margin-right: 20px;
+  font-size: 1.1em;
+  margin-right: 10px;
 }
 
 footer a:hover {
