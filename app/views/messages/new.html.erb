@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-8 col-md-offset-2">
+
+      <h1> Contact Fox Decorating</h1>
+
+      <p class="center"> Drop us a line and we will be in touch soon!</p><br/>
+
+      <%= form_for @message, url: contact_path, method: :post do |f| %>
+
+          <%= f.label :name, "Name:" %>
+          <%= f.text_field :name, class: 'form-control' %>
+
+          <%= f.label :phone_number, "Contact Phone:" %>
+          <%= f.email_field :phone_number, class: 'form-control' %>
+
+          <%= f.label :body, "Optional Message:" %>
+          <%= f.email_field :body, class: 'form-control' %>
+
+      <% end %>
+      <br/>
+      <%= submit_tag("Contact Us", class: "btn btn-primary col-md-12") %>
+
+    </div>
+  </div>
+</div>
