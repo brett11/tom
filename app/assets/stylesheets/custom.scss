@@ -14,9 +14,15 @@ $gray-medium-light: #eaeaea;
 }
 
 /* GLOBAL STYLES */
-body {
+html, body {
   padding-top: 60px;
   font-family: "AvenirNext",Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: 100vh;     //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
+}
+
+/*WRAP FOR LAYOUT */
+#wrap{
+  min-height: 100vh;
 }
 
 /* HEADER */
@@ -99,10 +105,12 @@ header {
 
 /* FOOTER STYLES */
 
-footer {
-  position: fixed;
-  bottom: 0; /*https://stackoverflow.com/questions/19330611/fixed-footer-in-bootstrap*/
-  margin: 15px 0;
+.footer {
+  position: relative;
+  margin-top: -100px; /* negative value of footer height */  //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
+  height: 100px;
+  clear:both;
+  padding-top:20px;
 }
 
 footer a {
@@ -127,9 +135,11 @@ footer ul li {
 
 
 /* HOME STYLES */
-.front_page_container{
+.page_container{
   padding-left: 0;
   padding-right: 0;
+  overflow: auto; //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
+  padding-bottom: 100px; /* this needs to be bigger than footer height   https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap*/
 }
 
 .container_for_background{
@@ -218,13 +228,18 @@ footer ul li {
 }
 
 .tom_description_content{
-  padding: 20px 30px;
+  padding: 20px 50px;
   font-size: 1.1em;
 }
 
 .services_container{
   margin-top: 20px;
+  text-align: center;
   //padding-left: 50px;
+}
+
+.services_container ul{
+  list-style-type: none;
 }
 
 #services{
@@ -243,6 +258,7 @@ footer ul li {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
   height: 15vh;
   padding: 10px 0px;
 }
@@ -396,4 +412,9 @@ h3{
 
 .center{
   text-align: center;
+}
+
+.contact_us_container{
+  margin-top: -40px;
+  padding-bottom: 100px;
 }

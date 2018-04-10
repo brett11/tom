@@ -1,44 +1,45 @@
-<div class="front_page_container" style="margin-top:0px;">
-  <% if false %>
-      <div class="company_name">
-        <h2>Fox Decorating</h2>
-      </div>
-  <% end %>
-
-  <div id="front_page_picture">
-    <%= image_tag("fox_logo.jpg", alt: "Fox with paintbrush")  %>
-  </div>
-
-  <div class="container_for_background">
-    <div class="content_container container-fluid">
-
-      <div class="row">
-
-        <div class="about_us_container col-sm-7 align-items-center">
-          <div id="about_us">
-            <h3>Serving Chicagoland Since 1986</h3>
-            <br/>
-            <% Faker::Lorem.paragraphs(4, false).each do |paragraph| %>
-                <%= content_tag(:p, paragraph) %>
-            <% end %>
-          </div>
+<div id="wrap">
+  <div class="page_container" style="margin-top:0px;">
+    <% if false %>
+        <div class="company_name">
+          <h2>Fox Decorating</h2>
         </div>
+    <% end %>
 
-        <div class="location_and_hours_container col-sm-5">
-          <div id="location_and_hours">
-            <h3>Location</h3>
-            <div class="location">
-              <div style='max-width: 100%;'>
-                <div id="map" style='width: 100%; height: 250px;'></div>
-              </div>
-              Serving Downers Grove, Naperville, Lisle, Glen Ellyn, Woodridge, Oak Brook, Burr Ridge, Aurora, and the
-              rest of the Chicagoland area.
+    <div id="front_page_picture">
+      <%= image_tag("fox_logo.jpg", alt: "Fox with paintbrush")  %>
+    </div>
+
+    <div class="container_for_background">
+      <div class="content_container container-fluid">
+
+        <div class="row">
+
+          <div class="about_us_container col-sm-7 align-items-center">
+            <div id="about_us">
+              <h3>Serving Chicagoland Since 1986</h3>
+              <br/>
+              <% Faker::Lorem.paragraphs(4, false).each do |paragraph| %>
+                  <%= content_tag(:p, paragraph) %>
+              <% end %>
             </div>
           </div>
-        </div>
 
+          <div class="location_and_hours_container col-sm-5">
+            <div id="location_and_hours">
+              <h3>Location</h3>
+              <div class="location">
+                <div style='max-width: 100%;'>
+                  <div id="map" style='width: 100%; height: 250px;'></div>
+                </div>
+                Serving Downers Grove, Naperville, Lisle, Glen Ellyn, Woodridge, Oak Brook, Burr Ridge, Aurora, and the
+                rest of the Chicagoland area.
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
 
       <div class="about_tom_container col-12">
         <div id="about_tom">
@@ -72,6 +73,8 @@
       </div>
     </div>
   </div>
+</div>
+
 
 
 

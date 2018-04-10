@@ -1,27 +1,36 @@
-<div class="container">
-  <div class="row">
+<div id="wrap">
+  <div class="page_container">
 
-    <div class="col-md-8 col-md-offset-2">
+    <div id="front_page_picture">
+      <%= image_tag("fox_logo.jpg", alt: "Fox with paintbrush")  %>
+    </div>
 
-      <h1> Contact Fox Decorating</h1>
+    <div class="container">
+      <div class="row">
 
-      <p class="center"> Drop us a line and we will be in touch soon!</p><br/>
+        <div class="contact_us_container col-md-8 col-md-offset-2">
 
-      <%= form_for @message, url: contact_path, method: :post do |f| %>
+          <h1> Contact Fox Decorating</h1>
 
-          <%= f.label :name, "Name:" %>
-          <%= f.text_field :name, class: 'form-control' %>
+          <p class="center"> Drop us a line and we will be in touch soon!</p><br/>
 
-          <%= f.label :phone_number, "Contact Phone:" %>
-          <%= f.email_field :phone_number, class: 'form-control' %>
+          <%= form_for @message, url: contact_path, method: :post do |f| %>
 
-          <%= f.label :body, "Optional Message:" %>
-          <%= f.email_field :body, class: 'form-control' %>
+              <%= f.label :name, "Name:" %>
+              <%= f.text_field :name, class: 'form-control' %>
 
-      <% end %>
-      <br/>
-      <%= submit_tag("Contact Us", class: "btn btn-primary col-md-12") %>
+              <%= f.label :phone_number, "Contact Phone:" %>
+              <%= f.email_field :phone_number, class: 'form-control' %>
 
+              <%= f.label :body, "Optional Message:" %>
+              <%= f.email_field :body, class: 'form-control' %>
+
+          <% end %>
+          <br/>
+          <%= submit_tag("Contact Us", class: "btn btn-primary col-md-12") %>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
