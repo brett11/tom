@@ -17,7 +17,7 @@ $gray-medium-light: #eaeaea;
 html, body {
   padding-top: 60px;
   font-family: "AvenirNext",Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  height: 100vh;     //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
+  height: 100vh;     //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap, I switched to vh from %
 }
 
 /*WRAP FOR LAYOUT */
@@ -30,7 +30,7 @@ html, body {
 header {
   // https://www.adam-bray.com/2017/02/18/create-a-html-5-and-css-3-mobile-navigation-bar/
   //display: flex;
-  margin-bottom: 0px;
+  //margin-bottom: 0px;
 }
 
 #navbar_container{
@@ -43,9 +43,10 @@ header {
   font-size: 1.5em;
   color: #fff;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: normal;
   //letter-spacing: -1px;
   padding-top: 9px;
+  letter-spacing: 1.5px;
   // font-weight: bold;
 
   /* & is reference to parent logo. this is nested writing per 5.2.2 of Ruby on Rails Tutorial */
@@ -69,7 +70,6 @@ header {
 #site_content{
   padding-left: 0;
   padding-right: 0;
-  padding-top: 10px;
 }
 
 // https://stackoverflow.com/questions/19844561/bootstrap-3-vertically-center-navigation-links-when-logo-increasing-the-height
@@ -101,6 +101,22 @@ header {
 .dropdown-menu{
   text-align: center;
   font-size: 1.0em;
+}
+
+/* FOX HERO STYLES */
+.hero_container{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front_page_picture img{
+  //width: 100%;
+  flex-shrink: 0;
+  margin-bottom: 60px;
 }
 
 /* FOOTER STYLES */
@@ -253,15 +269,7 @@ footer ul li {
 //  visibility: hidden;
 //}
 
-#front_page_picture img{
-  //width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  height: 15vh;
-  padding: 10px 0px;
-}
+
 
 /* typography */
 
@@ -292,10 +300,6 @@ p {
 
 
 
-#front_page img{
-  width: 100%;
-  max-height: 100vh;
-}
 
 
 /* forms */
@@ -408,6 +412,9 @@ h3{
   padding-top: 20px;
 }
 
+.second_row_pics{
+  margin-bottom: 80px;
+}
 /* CONTACT STYLES */
 
 .center{

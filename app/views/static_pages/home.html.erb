@@ -6,9 +6,12 @@
         </div>
     <% end %>
 
-    <div id="front_page_picture">
-      <%= image_tag("fox_logo.jpg", alt: "Fox with paintbrush")  %>
+    <div class="hero_container">
+      <div class="front_page_picture">
+        <%= image_tag("fox_logo.jpg", alt: "Fox with paintbrush")  %>
+      </div>
     </div>
+
 
     <div class="container_for_background">
       <div class="content_container container-fluid">
@@ -41,25 +44,28 @@
         </div>
       </div>
 
-      <div class="about_tom_container col-12">
-        <div id="about_tom">
-          <h3>About Tom</h3>
-          <div class="tom d-flex">
-            <div class="tom_picture col-12">
-              <%= image_tag("tom_pic1.jpg", alt: "Tom Fox")  %>
-            </div>
+      <div class="row">
+        <div class="about_tom_container col-12">
+          <div id="about_tom">
+            <h3>About Tom</h3>
+            <div class="tom d-flex">
+              <div class="tom_picture col-12">
+                <%= image_tag("tom_pic1.jpg", alt: "Tom Fox")  %>
+              </div>
 
-            <div class="tom_description col-12">
-              <div class="tom_description_content">
-                <b><em>Tom Fox....</em></b>
-                <% Faker::Lorem.sentences(12, false).each do |sentence| %>
-                    <%= sentence %>
-                <% end %>
+              <div class="tom_description col-12">
+                <div class="tom_description_content">
+                  <b><em>Tom Fox....</em></b>
+                  <% Faker::Lorem.sentences(12, false).each do |sentence| %>
+                      <%= sentence %>
+                  <% end %>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
       <div class="services_container col-12">
         <div id="services">
