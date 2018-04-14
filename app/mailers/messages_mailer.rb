@@ -1,4 +1,4 @@
 class MessagesMailer < ApplicationMailer
-  def contact(@message)
+  def contact(message)
   end
 end
