@@ -40,7 +40,7 @@ header {
 #logo {
   float: left;
   margin-right: 10px;
-  font-size: 1.5em;
+  font-size: 2.1em;
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
@@ -83,6 +83,7 @@ header {
   display: inline-block;
   float: none;
   vertical-align: top;
+  height: 5vh;
 }
 
 .navbar .navbar-collapse {
@@ -248,10 +249,14 @@ footer ul li {
   font-size: 1.1em;
 }
 
+
+/* SERVICES STYLES */
+
 .services_container{
-  margin-top: 20px;
+  margin-top: 40px;
+  padding-bottom: 30px;
   text-align: center;
-  //padding-left: 50px;
+  font-size: 1.1em;
 }
 
 .services_container ul{
