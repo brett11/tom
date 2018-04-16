@@ -1,2 +1,30 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<div class="about_page_container">
+
+  <div class="hero_container">
+    <div class="front_page_picture">
+      <%= image_tag("fox_logo.jpg", alt: "Fox with paintbrush")  %>
+    </div>
+  </div>
+
+  <h1>About Fox Decorating</h1>
+
+  <div class="row">
+    <div class="tom-coolest col-12">
+      <p>Tom is the coolest guy you'll ever meet, guaranteed.  Tom was born into the Fox Family, a clan well-known for their good looks and overall professionalism.</p>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="customer_reviews col-12">
+      <h3>Services...</h3>
+        <ul style="padding: 15px;">
+          <% Faker::Lorem.sentences(10).each do |sentence| %>
+              <li><%=sentence%></li>
+          <% end %>
+        </ul>
+    </div>
+  </div>
+</div>
+
+

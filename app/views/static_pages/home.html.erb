@@ -1,4 +1,4 @@
-<div id="wrap">
+
   <div class="page_container" style="margin-top:0px;">
     <% if false %>
         <div class="company_name">
@@ -17,7 +17,6 @@
       <div class="content_container container-fluid">
 
         <div class="row">
-
           <div class="about_us_container col-sm-7 align-items-center">
             <div id="about_us">
               <h3>Serving Chicagoland Since 1986</h3>
@@ -66,20 +65,21 @@
         </div>
       </div>
 
-
-      <div class="services_container col-12">
-        <div id="services">
-          <h3>Services</h3>
-          <ul style="padding: 15px;">
-            <% Faker::Lorem.sentences(10).each do |sentence| %>
-                <li><%=sentence%></li>
-            <% end %>
-          </ul>
+      <div class="row">
+        <div class="services_container col-12">
+          <div id="services">
+            <h3>Services</h3>
+            <ul style="padding: 15px;">
+              <% Faker::Lorem.sentences(10).each do |sentence| %>
+                  <li><%=sentence%></li>
+              <% end %>
+            </ul>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
-</div>
 
 
 

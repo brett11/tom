@@ -17,13 +17,9 @@ $gray-medium-light: #eaeaea;
 html, body {
   padding-top: 60px;
   font-family: "AvenirNext",Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  height: 100vh;     //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap, I switched to vh from %
+  //height: 100vh;     //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap, I switched to vh from %
 }
 
-/*WRAP FOR LAYOUT */
-#wrap{
-  min-height: 100vh;
-}
 
 /* HEADER */
 
@@ -70,6 +66,7 @@ header {
 #site_content{
   padding-left: 0;
   padding-right: 0;
+  min-height: 90vh;
 }
 
 // https://stackoverflow.com/questions/19844561/bootstrap-3-vertically-center-navigation-links-when-logo-increasing-the-height
@@ -126,11 +123,12 @@ header {
 /* FOOTER STYLES */
 
 .footer {
-  position: relative;
-  margin-top: -100px; /* negative value of footer height */  //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
-  height: 100px;
-  clear:both;
-  padding-top:20px;
+  //position: relative;
+  //margin-top: -100px; /* negative value of footer height */  //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
+  //height: 100px;
+  //clear:both;
+  //padding-top: 20px;
+  padding: 0 30px 25px 0;
 }
 
 footer a {
@@ -159,7 +157,7 @@ footer ul li {
   padding-left: 0;
   padding-right: 0;
   overflow: auto; //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
-  padding-bottom: 100px; /* this needs to be bigger than footer height   https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap*/
+  padding-bottom: 20px; /* ???> this needs to be bigger than footer height   https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap*/
 }
 
 .container_for_background{
@@ -256,7 +254,7 @@ footer ul li {
 /* SERVICES STYLES */
 
 .services_container{
-  margin-top: 40px;
+  margin-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   font-size: 1.1em;
@@ -432,4 +430,14 @@ h3{
 .contact_us_container{
   margin-top: -40px;
   padding-bottom: 100px;
+}
+
+/*ABOUT STYLES*/
+
+.tom-coolest{
+  text-align: center;
+}
+
+.customer_reviews{
+  text-align: center;
 }
