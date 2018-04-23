@@ -87,6 +87,7 @@ header {
 
 .navbar .navbar-collapse {
   text-align: center;
+  height: 12em;
 }
 
 #menuContent{
@@ -102,6 +103,8 @@ header {
   text-align: center;
   font-size: 1.0em;
 }
+
+
 
 /* FOX HERO STYLES */
 .hero_container{
@@ -130,6 +133,7 @@ header {
   //padding-top: 20px;
   padding: 0 30px 25px 0;
   text-align: center;
+  font-weight: bold;
 }
 
 footer a {
@@ -149,7 +153,7 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 
