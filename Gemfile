@@ -32,6 +32,7 @@ gem 'sendgrid', '~> 1.2', '>= 1.2.4'
 gem 'gmaps4rails', '~> 2.1', '>= 2.1.2'
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3'
 gem 'pg', '~> 0.21.0'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 group :development, :test do
   gem 'byebug', '~> 9.1'
