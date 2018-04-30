@@ -27,6 +27,13 @@
               <%= f.label :body, "Optional Message:" %>
               <%= f.email_field :body, class: 'form-control' %>
 
+              <div class="hidden">
+                <%= f.label :nickname %>
+                <%= f.text_field :nickname, hint: 'leave blank, for spam control', class: 'form-control' %>
+              </div>
+
+
+
           <% end %>
           <br/>
           <%= submit_tag("Contact Us", class: "btn btn-primary col-md-12") %>
