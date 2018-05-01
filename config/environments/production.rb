@@ -104,7 +104,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   #TODO: add host on below line once set up with heroku
   #host =
-  config.action_mailer.default_url_options = { host: host }
+  config.action_mailer.default_url_options = { host: 'https://rocky-caverns-77992.herokuapp.com' }
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
     :port           => '587',

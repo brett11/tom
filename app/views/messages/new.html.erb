@@ -22,21 +22,23 @@
               <%= f.text_field :name, class: 'form-control' %>
 
               <%= f.label :phone_number, "Contact Phone:" %>
-              <%= f.email_field :phone_number, class: 'form-control' %>
+              <%= f.text_field :phone_number, class: 'form-control' %>
 
               <%= f.label :body, "Optional Message:" %>
-              <%= f.email_field :body, class: 'form-control' %>
+              <%= f.text_field :body, class: 'form-control' %>
 
               <div class="hidden">
                 <%= f.label :nickname %>
                 <%= f.text_field :nickname, hint: 'leave blank, for spam control', class: 'form-control' %>
               </div>
 
+              <br/>
 
+              <%= submit_tag("Contact Us", class: "btn btn-primary col-md-12") %>
 
           <% end %>
           <br/>
-          <%= submit_tag("Contact Us", class: "btn btn-primary col-md-12") %>
+
 
         </div>
       </div>
