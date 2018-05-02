@@ -132,7 +132,8 @@ header {
   //clear:both;
   //padding-top: 20px;
   padding: 0 30px 25px 0;
-  text-align: center;
+  //text-align: center;
+  //float: right;
   font-weight: bold;
 }
 
@@ -147,7 +148,7 @@ footer a:hover {
 }
 
 footer ul {
-  //float: right;
+  float: right;
   list-style: none;
 }
 

@@ -1,5 +1,6 @@
 class Message < MailForm::Base
   attribute :name,            :validate => true
+  attribute :email,           :validate => /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   attribute :phone_number,    :validate => true
   attribute :body,            :validate => true
   attribute :nickname,        :captcha => true  #to catch spam
@@ -8,7 +9,7 @@ class Message < MailForm::Base
     {
       :subject => "Contact Form",
       :to => "tomfox9235@gmail.com",
-      :from => %("#{name}" <#{phone_number}>)
+      :from => %("#{name}" <#{email}>)
     }
   end
 end
