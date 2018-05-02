@@ -86,6 +86,7 @@ Rails.application.configure do
 
   #BF Note: https://devcenter.heroku.com/articles/paperclip-s3
   # config/environments/production.rb
+=begin
   config.paperclip_defaults = {
     storage: :s3,
     s3_protocol: ENV.fetch('S3_PROTOCOL'),
@@ -98,6 +99,7 @@ Rails.application.configure do
       s3_region: ENV.fetch('AWS_REGION'),
     }
   }
+=end
 
   #Listing 11.41 from Hartl tutorial
   config.action_mailer.raise_delivery_errors = true
