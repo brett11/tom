@@ -7,9 +7,10 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     @message.request = request
       if @message.deliver
-        flash[:notice] = "Thanks!  We have received your message and will be in touch soon."
+        # flash.now[:notice] = "Thanks!  We have received your message and will be in touch soon."
+        flash.now[:error] = nil
       else
-        flash[:danger] = "There was an error in sending your message.  Please try again."
+        flash.now[:danger] = "There was an error in sending your message.  Please try again."
         render :new
       end
   end
