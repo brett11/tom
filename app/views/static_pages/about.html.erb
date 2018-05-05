@@ -1,26 +1,30 @@
-<div class="about_page_container">
+
 
   <%= render 'layouts/hero' %>
 
-  <h1>About Fox Decorating</h1>
+  <div class="content_container container-fluid about-fox-dec">
+    <h1>Fox Decorating</h1>
 
-  <div class="row">
-    <div class="center col-12">
-      <p>Tom is the coolest guy you'll ever meet, guaranteed.  Tom was born into the Fox Family, a clan well-known for their good looks and overall professionalism.</p>
-    </div>
+      <div class="row">
+        <div class="col-sm-12 center">
+          <p>Tom Fox has been installing wallpaper and painting in the Chicagoland area since 1986.  He is a graduate of the American School of Paper Hanging Arts in Commerce, Georgia.</p>
+          <p>Because of his continuous work in wallcovering throughout the years, even as wallpaper declined as a trend around 2000, Tom is currently one of the most experienced and qualified paper-hangers in the Chicago suburbs.</p>
+          <p>Over the years, Tom has earned a reputation for first-class work, friendly service, and a great wallpaper-installation experience.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 services_about">
+          <h3>Services</h3>
+          <br/>
+          <p>Free Estimates</p>
+          <p>Wallpaper Installation</p>
+          <p>Painting, with Wallpaper Installation</p>
+        </div>
+      </div>
+
   </div>
 
 
-  <div class="row">
-    <div class="customer_reviews col-12">
-      <h3>Services...</h3>
-        <ul style="padding: 15px;">
-          <% Faker::Lorem.sentences(10).each do |sentence| %>
-              <li><%=sentence%></li>
-          <% end %>
-        </ul>
-    </div>
-  </div>
-</div>
 
 
