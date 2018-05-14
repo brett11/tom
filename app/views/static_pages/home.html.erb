@@ -17,9 +17,10 @@
             <div id="about_us">
               <h3>Serving Chicagoland Since 1986</h3>
               <br/>
-              <% Faker::Lorem.paragraphs(4, false).each do |paragraph| %>
-                  <%= content_tag(:p, paragraph) %>
-              <% end %>
+              <p>Tom Fox has been installing wallpaper and painting in the Chicagoland area since 1986.  He is a graduate of the American School of Paper Hanging Arts in Commerce, Georgia.</p>
+              <p>Because of his continuous work in wallcovering through the years, even as wallpaper declined as a trend around 2000, Tom is currently one of the most experienced and qualified paper-hangers in the Chicago suburbs.</p>
+              <p>In recent years, as wallpaper has come back into favor as an interior design choice, Tom has used his expertise to complete many unique and first-class wallcovering projects.</p>
+              <p>Over the years, Tom has earned a reputation for first-class work, friendly service, and a great overall wallpaper-installation experience.</p>
             </div>
           </div>
 
@@ -49,11 +50,9 @@
               </div>
 
               <div class="tom_description col-12">
-                <div class="tom_description_content">
-                  <b><em>Tom Fox....</em></b>
-                  <% Faker::Lorem.sentences(12, false).each do |sentence| %>
-                      <%= sentence %>
-                  <% end %>
+                <div class="tom_description_content col-md-8 col-md-offset-2 center">
+                  <p><em>Tom Fox</em> is a graduate of the American School of Paper Hanging Arts in Commerce, Georgia. He has owned and operated Fox Decorating, based out of Woodridge, since 1986.</p>
+                  <p>Throughout the years, Tom has earned a reputation as a first-class paper hanger, as well as painter, who does outstanding work while providing friendly and professional service.</p>
                 </div>
               </div>
             </div>
@@ -65,10 +64,14 @@
         <div class="services_container col-12">
           <div id="services">
             <h3>Services</h3>
-            <ul style="padding: 15px;">
-              <% Faker::Lorem.sentences(10).each do |sentence| %>
-                  <li><%=sentence%></li>
-              <% end %>
+            <ul class="services-list">
+              <li>Free Estimates</li>
+              <li>Wallpaper Installation</li>
+              <li>Painting (with wallpaper projects)</li>
+              <li>Clean Work</li>
+              <li>Friendly Service</li>
+              <li>Great Communication</li>
+              <li>Years of Expertise</li>
             </ul>
           </div>
         </div>
