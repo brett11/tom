@@ -1,11 +1,8 @@
 # Fox Decorating
 
-I collaborated with my twin brother- a software engineer himself- on this website for my uncle's wallpaper business.  Technologies include:
+I collaborated with my twin brother- a software engineer himself- on this website for my uncle's wallpaper business.  
 
--Ruby on Rails
--Bootstrap
--Amazon S3/ AWS
--Sendgrid
+Technologies include: Ruby on Rails, Bootstrap, Amazon S3/ AWS, Sendgrid
 
 See the screenshots below:
 
