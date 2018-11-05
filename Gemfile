@@ -30,6 +30,9 @@ gem 'underscore-rails', '~> 1.8', '>= 1.8.3'
 gem 'pg', '~> 0.21.0'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
+gem 'react_on_rails', '11.1.8'
+gem 'webpacker', '3.5.5'
+
 group :development, :test do
   gem 'byebug', '~> 9.1'
   gem 'rspec-rails', '~> 3.6', '>= 3.6.1'
